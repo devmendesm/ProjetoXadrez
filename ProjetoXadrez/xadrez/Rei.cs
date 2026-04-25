@@ -100,8 +100,8 @@ namespace xadrez
                  
                 if (testeTorreParaRoque(posT1))
                 {
-                    Posicao p1 = new Posicao(posicao.linha, posicao.linha + 1);
-                    Posicao p2 = new Posicao(posicao.linha, posicao.linha + 2);
+                    Posicao p1 = new Posicao(posicao.linha, posicao.coluna + 1);
+                    Posicao p2 = new Posicao(posicao.linha, posicao.coluna + 2);
 
                     if (tab.getPeca(p1) == null && tab.getPeca(p2) == null)
                     {
@@ -114,9 +114,9 @@ namespace xadrez
                  
                 if (testeTorreParaRoque(posT1))
                 {
-                    Posicao p1 = new Posicao(posicao.linha, posicao.linha - 1);
-                    Posicao p2 = new Posicao(posicao.linha, posicao.linha - 2);
-                    Posicao p3 = new Posicao(posicao.linha, posicao.linha - 3);
+                    Posicao p1 = new Posicao(posicao.linha, posicao.coluna - 1);
+                    Posicao p2 = new Posicao(posicao.linha, posicao.coluna - 2);
+                    Posicao p3 = new Posicao(posicao.linha, posicao.coluna - 3);
 
                     if (tab.getPeca(p1) == null && tab.getPeca(p2) == null && tab.getPeca(p3) == null)
                     {
